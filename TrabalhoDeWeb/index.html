@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tática Alpha - Armas Táticas e Equipamentos Militares</title>
+    <link rel="stylesheet" href="assets/css/estilo.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!--Header-->
+    <header class="main-header">
+        <div class="container">
+            <div class="logo-container">
+                <a href="index.html" class="logo">
+                    <img src="assets/image/TaticaAlphalogo-removebg-preview.png" alt="Tática Alpha">
+                </a>
+            </div>
+            
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html" class="active">INÍCIO</a></li>
+                    <li><a href="#Produtos">PRODUTOS</a></li>
+                    <li><a href="#Sobre">SOBRE</a></li>
+                    <li><a href="contato.html">CONTATO</a></li>
+                </ul>
+            </nav>
+            
+                    <div class="cart-icon" id="cart-toggle">
+                        <i class="fas fa-shopping-cart"></i>
+                      </div>                   
+        </div>
+    </header>
+
+        <!-- Carrinho Lateral -->
+        <div id="cart-sidebar" class="cart-sidebar">
+            <div class="cart-header">
+                <h2>Carrinho</h2>
+                <span class="cart-close" id="cart-close">&times;</span>
+            </div>
+            <div class="cart-body" id="itens-carrinho">
+                <p>Seu carrinho está vazio</p>
+                <a href="#Produtos" class="cart-link">Continuar comprando</a>
+            </div>
+            <div class="cart-footer">
+                <p id="total-carrinho">Total: R$ 0,00</p>
+            </div>
+        </div>
+
+    <!--Banner-->
+    <section class="hero-banner" style="background-image: url('assets/image/banner1.png');">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">DESERT EAGLE .50</h1>
+                <h2 class="hero-subtitle">ARMAS TÁTICAS</h2>
+                <h3 class="hero-description">EQUIPAMENTO PROFISSIONAL</h3>
+                <p class="hero-tagline">Para profissionais exigentes</p>
+                <a href="#produtos" class="btn-primary">VER PRODUTOS</a>
+            </div>
+        </div>
+
+    </section>
+
+    <!--Produtos-->
+    <section class="produtos-section" id="Produtos">
+        <div class="container">
+            <h2 class="section-title">NOSSOS PRODUTOS</h2>
+            <div class="section-divider"></div>
+            
+            <div class="filter-tabs">
+                <button class="filter-btn active" data-filter="todos">Todos</button>
+                <button class="filter-btn" data-filter="pistolas">Pistolas</button>
+                <button class="filter-btn">Rifles</button>
+                <button class="filter-btn">Acessórios</button>
+            </div>
+            
+            <div class="produtos-grid">
+                <!--Produto 1-->
+                <div class="produto-card" data-categoria="pistolas">
+                    <div class="produto-img">
+                      <img src="assets/image/Glock_G25.jpg" alt="Glock G25">
+                      <span class="discount-badge">-30%</span>
+                    </div>
+                    <div class="produto-info">
+                      <h3 class="produto-title">Glock G25</h3>
+                      <p class="produto-desc">
+                        Pistola semiautomática com sistema Safe Action, câmara .380 Auto, produzida na Áustria.
+                      </p>
+                      <div class="produto-valor">
+                        <span class="valor-original">R$ 7.200,00</span>
+                        <span class="valor-atual">R$ 5.040,00</span>
+                      </div>
+                      <button 
+                        class="btn-comprar" 
+                        data-nome="Glock G25" 
+                        data-preco="5040.00">
+                        Comprar
+                      </button>
+                    </div>
+                  </div>
+                  
+                
+                <!--Produto 2-->
+                <div class="produto-card" data-categoria="pistolas">
+                    <div class="produto-img">
+                        <img src="assets/image/DESERT EAGLE.webp" alt="Desert Eagle .50">
+                        <span class="discount-badge">-30%</span>
+                    </div>
+                    <div class="produto-info">
+                        <h3 class="produto-title">Desert Eagle .50</h3>
+                        <p class="produto-desc">Pistola semiautomática de ação simples, com câmara no calibre .50 Action Express.</p>
+                        <div class="produto-valor">
+                            <span class="valor-original">R$ 12.500,00</span>
+                            <span class="valor-atual">R$ 8.750,00</span>
+                        </div>
+                        <a href="#" class="btn-comprar">Comprar</a>
+                    </div>
+                </div>
+                
+                <!--Produto 3-->
+                <div class="produto-card">
+                    <div class="produto-img">
+                        <img src="assets/image/banner1.png" alt="Coldre Tático">
+                    </div>
+                    <div class="produto-info">
+                        <h3 class="produto-title">Coldre Tático</h3>
+                        <p class="produto-desc">Coldre tático de alta resistência para uso profissional.</p>
+                        <div class="produto-valor">
+                            <span class="valor-atual">R$ 350,00</span>
+                        </div>
+                        <a href="#" class="btn-comprar">Comprar</a>
+                    </div>
+                </div>
+
+                <!--Produto 4-->
+                <div class="produto-card">
+                    <div class="produto-img">
+                        <img src="assets/image/banner1.png" alt="Coldre Tático">
+                    </div>
+                    <div class="produto-info">
+                        <h3 class="produto-title">Coldre Tático</h3>
+                        <p class="produto-desc">Coldre tático de alta resistência para uso profissional.</p>
+                        <div class="produto-valor">
+                            <span class="valor-atual">R$ 350,00</span>
+                        </div>
+                        <a href="#" class="btn-comprar">Comprar</a>
+                    </div>
+                </div>
+                <!--Produto 5-->
+                <div class="produto-card">
+                    <div class="produto-img">
+                        <img src="assets/image/banner1.png" alt="Coldre Tático">
+                    </div>
+                    <div class="produto-info">
+                        <h3 class="produto-title">Coldre Tático</h3>
+                        <p class="produto-desc">Coldre tático de alta resistência para uso profissional.</p>
+                        <div class="produto-valor">
+                            <span class="valor-atual">R$ 350,00</span>
+                        </div>
+                        <a href="#" class="btn-comprar">Comprar</a>
+                    </div>
+                </div>
+                <!--Produto 6-->
+                <div class="produto-card">
+                    <div class="produto-img">
+                        <img src="assets/image/banner1.png" alt="Coldre Tático">
+                    </div>
+                    <div class="produto-info">
+                        <h3 class="produto-title">Coldre Tático</h3>
+                        <p class="produto-desc">Coldre tático de alta resistência para uso profissional.</p>
+                        <div class="produto-valor">
+                            <span class="valor-atual">R$ 350,00</span>
+                        </div>
+                        <a href="#" class="btn-comprar">Comprar</a>
+                    </div>
+                </div>
+                <!--Produto 7-->
+                <div class="produto-card">
+                    <div class="produto-img">
+                        <img src="assets/image/banner1.png" alt="Coldre Tático">
+                    </div>
+                    <div class="produto-info">
+                        <h3 class="produto-title">Coldre Tático</h3>
+                        <p class="produto-desc">Coldre tático de alta resistência para uso profissional.</p>
+                        <div class="produto-valor">
+                            <span class="valor-atual">R$ 350,00</span>
+                        </div>
+                        <a href="#" class="btn-comprar">Comprar</a>
+                    </div>
+                </div>
+                <!--Produto 8-->
+                <div class="produto-card">
+                    <div class="produto-img">
+                        <img src="assets/image/banner1.png" alt="Coldre Tático">
+                    </div>
+                    <div class="produto-info">
+                        <h3 class="produto-title">Coldre Tático</h3>
+                        <p class="produto-desc">Coldre tático de alta resistência para uso profissional.</p>
+                        <div class="produto-valor">
+                            <span class="valor-atual">R$ 350,00</span>
+                        </div>
+                        <a href="#" class="btn-comprar">Comprar</a>
+                    </div>
+                </div>
+                <!--Produto 9-->
+                <div class="produto-card">
+                    <div class="produto-img">
+                        <img src="assets/image/banner1.png" alt="Coldre Tático">
+                    </div>
+                    <div class="produto-info">
+                        <h3 class="produto-title">Coldre Tático</h3>
+                        <p class="produto-desc">Coldre tático de alta resistência para uso profissional.</p>
+                        <div class="produto-valor">
+                            <span class="valor-atual">R$ 350,00</span>
+                        </div>
+                        <a href="#" class="btn-comprar">Comprar</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Sobre-->
+    <section class="sobre-section" id="Sobre">
+        <div class="container">
+            <h2 class="section-title">SOBRE A TÁTICA ALPHA</h2>
+            <div class="section-divider"></div>
+            
+            <div class="sobre-content">
+                <div class="sobre-text">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam quasi sequi et fuga nisi saepe expedita ipsam dolor. Aperiam libero,
+                         sit quia similique totam modi eum dolorem sed aliquid accusamus.</p>
+                    
+                    <div class="sobres-grid">
+                        <div class="sobre-card">
+                            <h3 class="sobre-Numero">10+</h3>
+                            <p class="sobre-desc">Anos de experiência</p>
+                        </div>
+                    
+                        <div class="sobre-card">
+                            <h3 class="sobre-Numero">10+</h3>
+                            <p class="sobre-desc">Anos de experiência</p>
+                        </div>
+                        
+                        <div class="sobre-card">
+                            <h3 class="sobre-Numero">10+</h3>
+                            <p class="sobre-desc">Anos de experiência</p>
+                        </div>
+                        
+                        <div class="sobre-card">
+                            <h3 class="sobre-Numero">10+</h3>
+                            <p class="sobre-desc">Anos de experiência</p>
+                        </div>
+                    </div>
+                </div>
+                    
+                <div class="sobre-image">
+                    <div class="image-container">
+                        <img src="assets/image/TaticaAlphalogo.jpeg" alt="">
+                        <div class="certificação-card">
+                            <h3>Certificação e Qualidade</h3>
+                            <p>Todos os nossos produtos passam por rigorosos testes de qualidade e possuem garantia.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-logo" >
+                    <img src="assets/image/TaticaAlphalogo.jpeg" alt="Tática Alpha">
+                    <h3>TÁTICA ALPHA</h3>
+                    <p>Sua fonte confiável de armas táticas e equipamentos militares de alta qualidade.</p>
+                    
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Links rápidos</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="#Produtos">Produtos</a></li>
+                        <li><a href="#Sobre">Sobre nós</a></li>
+                        <li><a href="contato.html">Contato</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-categoria">
+                    <h4>Categorias</h4>
+                    <ul>
+                        <li><a href="#">Pistolas</a></li>
+                        <li><a href="#">Rifles</a></li>
+                        <li><a href="#">Acessórios</a></li>
+                        <li><a href="#">Munições</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-Contato">
+                    <h4>Contato</h4>
+                    <p><i class="fas fa-map-marker-alt"></i> Rua. ticomianacama, 69 - São Paulo, SP</p>
+                    <p><i class="fas fa-phone"></i> (11) 1111-1111</p>
+                    <p><i class="fas fa-envelope"></i> taticaalpha@gmail.com</p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 Tática Alpha. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!--Scripts-->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="assets/js/script.js"></script>
+
+</body>
+</html>
