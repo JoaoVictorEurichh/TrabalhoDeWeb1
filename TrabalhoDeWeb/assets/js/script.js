@@ -86,47 +86,6 @@ function initScrollAnimation() {
 }
 
  // Carrinho
-// Controle do carrinho lateral
-document.addEventListener('DOMContentLoaded', function () {
-    const toggleBtn = document.getElementById('cart-toggle');
-    const cartSidebar = document.getElementById('cart-sidebar');
-    const closeBtn = document.getElementById('cart-close');
-    const filterButtons = document.querySelectorAll('.filter-btn');
-    const productCards = document.querySelectorAll('.produto-card');
-
-    if (toggleBtn && cartSidebar && closeBtn) {
-        toggleBtn.addEventListener('click', () => {
-            cartSidebar.classList.add('open');
-            atualizarCarrinho();
-        });
-
-        closeBtn.addEventListener('click', () => {
-            cartSidebar.classList.remove('open');
-        });
-
-        window.addEventListener('click', (e) => {
-            if (!cartSidebar.contains(e.target) && !toggleBtn.contains(e.target)) {
-                cartSidebar.classList.remove('open');
-            }
-        });
-    } else {
-        console.warn('IDs não encontrados: verifique HTML');
-    }
-
-    // Filtro de produtos
-    filterButtons.forEach(button => {
-        button.addEventListener('click', function () {
-            filterButtons.forEach(btn => btn.classList.remove('active'));
-            this.classList.add('active');
-            const filterValue = this.getAttribute('data-filter');
-
-            productCards.forEach(card => {
-                const cardCategory = card.getAttribute('data-categoria');
-                card.style.display = (filterValue === 'todos' || filterValue === cardCategory) ? 'block' : 'none';
-            });
-        });
-    });
-});
 
 //carrinho
 let carrinho = [];

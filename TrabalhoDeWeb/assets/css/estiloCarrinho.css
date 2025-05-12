@@ -1,0 +1,95 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', Arial, sans-serif;
+    color: #fff;
+    background-color: #121212;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    transition: all 0.3s ease;
+}
+
+ul {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+/* Header */
+.main-header {
+    background-color: #1a1a1a;
+    padding: 15px 0;
+    border-bottom: 1px solid #333;
+}
+
+.main-header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    display:flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 80px;
+    margin-right: 15px;
+}
+
+.main-nav ul {
+    display: flex;
+    gap: 30px;
+}
+
+.main-nav ul h2 {
+    margin-top: 22px;
+    text-decoration: none;
+    color: white;
+}
+
+.main-nav a {
+    font-size: 14px;
+    font-weight: 600;
+    color: #fff;
+    padding: 5px 0;
+    position: relative;
+}
+
+/*icon carrinho */
+.cart-icon i {
+    font-size: 22px;
+    color: #ff6600;
+}
+
+.quantidade-carrinho {
+    position: absolute;
+    top: 28px;
+    color: #fff;
+    padding: 2px;
+    border-radius: 30px;
+    font-weight: 600;
+    font-size: 15px;
+}
