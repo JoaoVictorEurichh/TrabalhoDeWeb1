@@ -1,12 +1,12 @@
 // Controle das abas de filtro
 function initFilterTabs() {
-    const filterButtons = document.querySelectorAll('.filter-btn');
-    if (!filterButtons.length) return;
+    const filtroButtons = document.querySelectorAll('.filtro-btn');
+    if (!filtroButtons.length) return;
     
-    filterButtons.forEach(button => {
+    filtroButtons.forEach(button => {
         button.addEventListener('click', () => {
             // Remover classe ativa de todos os botões
-            filterButtons.forEach(btn => btn.classList.remove('active'));
+            filtroButtons.forEach(btn => btn.classList.remove('active'));
             
             // Adicionar classe ativa ao botão clicado
             button.classList.add('active');
@@ -85,8 +85,6 @@ function initScrollAnimation() {
     handleScroll();
 }
 
- // Carrinho
-
 //carrinho
 let carrinho = [];
 
@@ -147,12 +145,12 @@ document.addEventListener('DOMContentLoaded', function () {
 
 //filtor
 document.addEventListener('DOMContentLoaded', function() {
-    const filterButtons = document.querySelectorAll('.filter-btn');
+    const filtroButtons = document.querySelectorAll('.filtro-btn');
     const productCards = document.querySelectorAll('.produto-card');
 
-    filterButtons.forEach(button => {
+    filtroButtons.forEach(button => {
         button.addEventListener('click', function() {
-            filterButtons.forEach(btn => btn.classList.remove('active'));
+            filtroButtons.forEach(btn => btn.classList.remove('active'));
             this.classList.add('active');
 
             const filterValue = this.getAttribute('data-filter');
@@ -160,9 +158,8 @@ document.addEventListener('DOMContentLoaded', function() {
             productCards.forEach(card => {
                 const cardCategory = card.getAttribute('data-categoria');
 
-                // Mostra ou esconde o card baseado no filtro
                 if (filterValue === 'todos' || filterValue === cardCategory) {
-                    card.style.display = 'block'; // ou 'flex', 'grid', dependendo do seu layout
+                    card.style.display = 'grid';
                 } else {
                     card.style.display = 'none';
                 }

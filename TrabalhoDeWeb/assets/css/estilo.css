@@ -95,21 +95,10 @@ img {
     width: 100%;
 }
 
+/* Carrinho*/
 .cart-icon i {
     font-size: 22px;
     color: #ff6600;
-}
-
-/* Carrinho*/
-
-.quantidade-carrinho {
-    position: absolute;
-    top: 28px;
-    color: #fff;
-    padding: 2px;
-    border-radius: 30px;
-    font-weight: 600;
-    font-size: 15px;
 }
 
 .cart-sidebar {
@@ -167,8 +156,8 @@ img {
 }
 
 /* Banner */
-.hero-banner {
-    height: 600px;
+.banner {
+    height: 350px;
     background-size: cover;
     background-position: center;
     position: relative;
@@ -178,7 +167,7 @@ img {
     padding: 0;
 }
 
-.hero-banner:before {
+.banner:before {
     content: '';
     position: absolute;
     top: 0;
