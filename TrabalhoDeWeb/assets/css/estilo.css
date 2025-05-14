@@ -306,7 +306,7 @@ img {
     margin-bottom: 40px;
 }
 
-.filter-btn {
+.filtro-btn {
     background-color: #1C1C1C;
     border: 1px solid #333;
     color: #fff;
@@ -318,8 +318,8 @@ img {
     transition: all 0.3s ease;
 }
 
-.filter-btn:hover,
-.filter-btn.active {
+.filtro-btn:hover,
+.filtro-btn.active {
     background-color: #ff6600;
     border-color: #ff6600;
 }
@@ -665,3 +665,5 @@ img {
         flex-wrap: wrap;
     }
 }
+
+/* Estilos do Modal */
