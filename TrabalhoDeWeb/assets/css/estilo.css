@@ -167,16 +167,6 @@ img {
     padding: 0;
 }
 
-.banner:before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.5);
-}
-
 .hero-content {
     position: relative;
     z-index: 2;
@@ -489,7 +479,7 @@ img {
     color: #fff;
 }
 
-.certification-card h3 {
+.certificação-card h3 {
     font-size: 20px;
     font-weight: 600;
     margin-bottom: 10px;

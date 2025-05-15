@@ -35,24 +35,6 @@ function initFilterTabs() {
     });
 }
 
-// Efeitos de hover nos produtos
-function initProductHover() {
-    const produtoCards = document.querySelectorAll('.produto-card');
-    if (!produtoCards.length) return;
-    
-    produtoCards.forEach(card => {
-        card.addEventListener('mouseenter', () => {
-            card.style.transform = 'translateY(-10px)';
-            card.style.boxShadow = '0 15px 30px rgba(0, 0, 0, 0.3)';
-        });
-        
-        card.addEventListener('mouseleave', () => {
-            card.style.transform = 'translateY(0)';
-            card.style.boxShadow = 'none';
-        });
-    });
-}
-
 // Animações de scroll
 function initScrollAnimation() {
     // Selecionar elementos que receberão animações
@@ -86,61 +68,7 @@ function initScrollAnimation() {
 }
 
 //carrinho
-let carrinho = [];
 
-function adicionarAoCarrinho(nome, preco) {
-    carrinho.push({ nome, preco });
-    atualizarCarrinho();
-}
-
-function removerDoCarrinho(index) {
-    carrinho.splice(index, 1);
-    atualizarCarrinho();
-}
-
-function atualizarCarrinho() {
-    const itensCarrinho = document.getElementById('itens-carrinho');
-    const totalCarrinho = document.getElementById('total-carrinho');
-
-    itensCarrinho.innerHTML = '';
-
-    let total = 0;
-
-    if (carrinho.length === 0) {
-        itensCarrinho.innerHTML = '<p>Seu carrinho está vazio</p><a href="#Produtos" class="cart-link">Continuar comprando</a>';
-        totalCarrinho.textContent = 'Total: R$ 0,00';
-        return;
-    }
-
-    carrinho.forEach((item, index) => {
-        total += item.preco;
-
-        const itemElement = document.createElement('div');
-        itemElement.className = 'item-carrinho';
-        itemElement.innerHTML = `
-            <span>${item.nome} - R$ ${item.preco.toFixed(2)}</span>
-            <button onclick="removerDoCarrinho(${index})">Remover</button>
-        `;
-        itensCarrinho.appendChild(itemElement);
-    });
-
-    totalCarrinho.textContent = `Total: R$ ${total.toFixed(2)}`;
-}
-
-//
-document.addEventListener('DOMContentLoaded', function () {
-    const botoesComprar = document.querySelectorAll('.btn-comprar');
-  
-    botoesComprar.forEach(botao => {
-      botao.addEventListener('click', function (e) {
-        e.preventDefault(); // previne redirecionamento de links
-        const nome = this.getAttribute('data-nome');
-        const preco = parseFloat(this.getAttribute('data-preco'));
-        adicionarAoCarrinho(nome, preco);
-      });
-    });
-  });
-  
 //
 
 //filtor
